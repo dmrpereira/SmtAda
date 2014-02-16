@@ -1,0 +1,32 @@
+project Provers is
+
+   for Languages use ("Ada","C");
+   for Source_Dirs use (".", "Z3", "Yices", "CVC3", "CVC4", "Bridges", "examples/**");
+   for Object_Dir use "tmp";
+   for Exec_Dir use ".";
+   for Library_Ali_Dir use "obj/";
+   for Main use ("teste.adb","test_yices.adb","bridge-yices.adb");
+
+
+   package Linker is
+      for Linker_Options use ("-L/Users/dpereira/Provers/yices1/lib","-L/Users/dpereira/Provers/lib","-L/opt/local/lib","-optl-Wl,-rpath,/Users/dpereira/Provers/lib","-v","-mdynamic-no-pic");
+      for Switches ("teste.adb") use ("-lcvc3","-lz3","-lgmp","-lyices","-lstdc++") ;
+      for Switches ("test_yices.adb") use ("-lgmp","-lyices","-lstdc++") ;
+   end Linker;
+
+   package Naming is
+      for Spec_Suffix ("c") use ".h";
+      for Body_Suffix ("c") use ".c";
+   end Naming;
+   
+   package Binder is
+      for Default_Switches ("Ada") use ("-shared") ;
+   end Binder;
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-gnat12", "-gnata", "-gnatQ", "-fPIC","-gnatA");
+   end Compiler;
+
+
+end Provers;
+
