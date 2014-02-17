@@ -356,7 +356,7 @@ package Yices is
    
    -- Return an expression representing a1 /= a2.
    function Yices_Mk_Diseq( Ctx : in Yices_Context ; A1, A2 : in Yices_Expr ) return Yices_Expr ;
-   pragma Import(C,Yices_Mk_Diseq,"yices_mk_or") ;
+   pragma Import(C,Yices_Mk_Diseq,"yices_mk_diseq") ;
    
    -- Return an expression representing (if c t e).
    function Yices_Mk_Ite( Ctx : in Yices_Context ; C, T, E : in Yices_Expr ) return Yices_Expr ;

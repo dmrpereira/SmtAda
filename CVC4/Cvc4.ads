@@ -1,5 +1,19 @@
-pragma Ada_2005;
-pragma Style_Checks (Off);
+------------------------------------------------------------------------------
+--                                                                          --
+--                                 SMT-Ada                                  --
+--                                                                          --
+-- Smt-Ada is free  software;  you can redistribute  it and/or  modify it   --
+-- under terms of the  GNU General Public License as published  by the Free --
+-- Software  Foundation;  either version 3,  or (at your option)  any later --
+-- version.  gnat2why is distributed  in the hope that  it will be  useful, --
+-- but WITHOUT ANY WARRANTY; without even the implied warranty of  MERCHAN- --
+-- TABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public --
+-- License for  more details.  You should have  received  a copy of the GNU --
+-- General  Public License  distributed with  gnat2why;  see file COPYING3. --
+-- If not,  go to  http://www.gnu.org/licenses  for a complete  copy of the --
+-- license.                                                                 --
+--                                                                          --
+------------------------------------------------------------------------------
 
 with Interfaces.C; use Interfaces.C;
 with Cvc4_Defs; use Cvc4_Defs;
@@ -8,32 +22,32 @@ with Interfaces.C.Strings;
 
 package Cvc4 is
 
-   function vc_createValidityChecker (arg1 : Flags) return VC;  -- /opt/local/include/cvc4/bindings/compat/c/c_interface.h:30
-   pragma Import (C, vc_createValidityChecker, "vc_createValidityChecker");
+   function Vc_CreateValidityChecker( Arg1 : Flags) return VC ; 
+   pragma Import(C,Vc_CreateValidityChecker,"vc_createValidityChecker") ;
 
-   function vc_createFlags return Flags;  -- /opt/local/include/cvc4/bindings/compat/c/c_interface.h:32
-   pragma Import (C, vc_createFlags, "vc_createFlags");
+   function Vc_CreateFlags return Flags; 
+   pragma Import(C,Vc_CreateFlags,"vc_createFlags") ;
 
-   procedure vc_destroyValidityChecker (arg1 : VC);  -- /opt/local/include/cvc4/bindings/compat/c/c_interface.h:35
-   pragma Import (C, vc_destroyValidityChecker, "vc_destroyValidityChecker");
+   procedure Vc_DestroyValidityChecker( Arg1 : VC ) ; 
+   pragma Import(C,Vc_DestroyValidityChecker,"vc_destroyValidityChecker") ;
 
-   procedure vc_deleteFlags (arg1 : Flags);  -- /opt/local/include/cvc4/bindings/compat/c/c_interface.h:37
-   pragma Import (C, vc_deleteFlags, "vc_deleteFlags");
+   procedure Vc_DeleteFlags( Arg1 : Flags ) ; 
+   pragma Import(C,Vc_DeleteFlags,"vc_deleteFlags") ;
 
-   procedure vc_deleteType (arg1 : c_Type);  -- /opt/local/include/cvc4/bindings/compat/c/c_interface.h:39
-   pragma Import (C, vc_deleteType, "vc_deleteType");
+   procedure Vc_DeleteType( Arg1 : C_Type ) ;
+   pragma Import(C,Vc_DeleteType,"vc_deleteType") ;
 
-   procedure vc_deleteExpr (arg1 : Expr);  -- /opt/local/include/cvc4/bindings/compat/c/c_interface.h:41
-   pragma Import (C, vc_deleteExpr, "vc_deleteExpr");
+   procedure Vc_DeleteExpr( Arg1 : Expr ) ;
+   pragma Import(C,Vc_DeleteExpr,"vc_deleteExpr") ;
 
-   procedure vc_deleteOp (arg1 : Op);  -- /opt/local/include/cvc4/bindings/compat/c/c_interface.h:43
-   pragma Import (C, vc_deleteOp, "vc_deleteOp");
+   procedure Vc_DeleteOp( Arg1 : Op ) ;
+   pragma Import(C,Vc_DeleteOp,"vc_deleteOp") ;
 
-   procedure vc_deleteVector (arg1 : System.Address);  -- /opt/local/include/cvc4/bindings/compat/c/c_interface.h:45
-   pragma Import (C, vc_deleteVector, "vc_deleteVector");
+   procedure Vc_DeleteVector( Arg1 : System.Address ) ;
+   pragma Import(C, vc_deleteVector, "vc_deleteVector") ;
 
-   procedure vc_deleteTypeVector (arg1 : System.Address);  -- /opt/local/include/cvc4/bindings/compat/c/c_interface.h:47
-   pragma Import (C, vc_deleteTypeVector, "vc_deleteTypeVector");
+   procedure Vc_DeleteTypeVector( Arg1 : System.Address) ;
+   pragma Import(C,Vc_DeleteTypeVector,"vc_deleteTypeVector") ;
 
    procedure vc_setBoolFlag
      (arg1 : Flags;
