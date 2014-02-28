@@ -4,7 +4,7 @@ project Provers is
    for Source_Dirs use (".", "Z3", "Yices", "CVC3", "CVC4", "examples");
    for Object_Dir use "tmp";
    for Exec_Dir use ".";
-   for Main use ("cvc3_t1.adb","yices_t1.adb","yices_t2.adb","yices_t3.adb");
+   for Main use ("cvc3_t1.adb","yices_t1.adb","yices_t2.adb","yices_t3.adb","z3_t1.adb","z3_t2.adb");
 
 
    package Linker is
@@ -13,6 +13,8 @@ project Provers is
       for Switches ("yices_t1.adb") use ("-lgmp","-lyices","-lstdc++") ;
       for Switches ("yices_t2.adb") use ("-lgmp","-lyices","-lstdc++") ;
       for Switches ("yices_t3.adb") use ("-lgmp","-lyices","-lstdc++") ;
+      for Switches ("z3_t1.adb") use ("-lz3") ;
+      for Switches ("z3_t2.adb") use ("-lz3") ;
    end Linker;
    
    package Binder is
