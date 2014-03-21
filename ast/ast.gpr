@@ -1,0 +1,9 @@
+project Ast is
+
+	Version := "alpha-1" ;
+	for Library_Dir use "../lib" ;
+	for Library_Name use "fol" ;
+	for Library_Kind use "dynamic" ;
+	for Library_Version use "libfol.so." & Version ;
+
+end Ast ;
