@@ -14,5 +14,13 @@ package body Ast.Vars is
       return (new Ast_Var'(Ast_Var_Name => My_N , Ast_Var_Type => My_T));
    end Mk_Ast_Var ;
    
+   procedure Pprint_Ast_Var_Case( V : in Ast_Var ) is
+   begin
+      Ada_Tio.Put("Var_Decl(" & To_String(V.Ast_Var_Name) & ":") ;
+      Pprint_Ast_Type_Case(V.Ast_Var_Type.all) ;
+      Ada_Tio.Put(")") ;
+      Ada_Tio.New_Line ;
+   end Pprint_Ast_Var_Case ;
+   
    
 end Ast.Vars ;

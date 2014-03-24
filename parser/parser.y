@@ -3,7 +3,7 @@
 --
 %token Variables_Kw
 %token Axioms_Kw
-%token Goals_Kw
+%token Goal_Kw
 
 %token Var_Kw
 %token Assume_Kw
@@ -76,7 +76,7 @@
     Goals_Context : Ast_Node ;
   end record ;
    
- Current_Context : Context ;
+ Current_Context : Context := (null,null,null) ;
 
 }
 
@@ -85,12 +85,20 @@
 -----------------
 -- Entry point --
 -----------------
-program : var_section axioms goals { Current_Context := ($1,$2,$3) ; } ;
+program : var_section axioms 
+{
+ Current_Context := ($1,$2,null) ; 
+} ;
 
 ---------------------------------------
 -- Grammar for variable declarations --
 ---------------------------------------
-var_section : Variables_Kw LB var_decl_list RB { $$ := $3 ; } ; 
+var_section : Variables_Kw LB var_decl_list RB 
+{
+  put_line("Processing Variables...") ;  
+ $$ := $3 ;
+}
+; 
 
 var_decl_list : var_decl_list_aux { $$ := $1 ; }
 | { $$ := null ; }
@@ -130,9 +138,9 @@ type_case : Int_Type_Kw
 ------------------------------------
 -- Grammar for axiom declarations --
 ------------------------------------
-axioms : axioms_decl { $$ := $1 ; }
-| { $$ := null ; }
-;
+axioms : axioms_decl
+	|
+	;
 
 axioms_decl : Axioms_Kw LB axioms_decl_list RB { $$ := $1 ; } ;
 
@@ -140,60 +148,50 @@ axioms_decl_list : axioms_decl_list_aux { $$ := $1 ; }
 | { $$ := null ; }
 ;
 
-axioms_decl_list_aux : axiom_decl { $$ := Build_Ast_Formula_Seq_Single($1) ; }
-| axioms_decl_list_aux axiom_decl { $$ := Build_Ast_Formula_Seq_Add($1,$2) ; }
-;
+axioms_decl_list_aux : axiom_decl 
+| axioms_decl_list_aux axiom_decl ;
 
 axiom_decl : Assume_Kw formula End_Stmt_Kw { $$ := $2 ; };
-
-------------------------------------
--- Grammar for axiom goals --
-------------------------------------
-goals : goals_decl { $$ := $1 ; }
-| { $$ := null ; }
-;
-
-goals_decl : Goals_Kw LB goals_decl_list RB { $$ := $1 ; } ;
-
-goals_decl_list : goals_decl_list_aux { $$ := $1 ; }
-| { $$ := null ; }
-;
-
-goals_decl_list_aux : goal_decl { $$ := Build_Ast_Formula_Seq_Single($1) ; }
-| goals_decl_list_aux goal_decl { $$ := Build_Ast_Formula_Seq_Add($1,$2) ; }
-;
-
-goal_decl : Sat_Kw formula End_Stmt_Kw { $$ := $2 ; };
 
 -------------------------
 -- Grammar of formulae --
 -------------------------
 formula : term_formula
-| LNeg_Sy formula %prec Dummy { $$ := Build_Ast_Formula_Neg($1) ; }
-| Forall_Kw Id_Val Is_Type_Kw type_case Comma_Sep_Kw formula %prec Dummy
-| Exists_Kw Id_Val Is_Type_Kw type_case Comma_Sep_Kw formula %prec Dummy
-| formula Land_Sy term_formula { $$ := Build_Ast_Formula_Binary(Formula_And,$1,$2) ; }
-| formula Lor_Sy term_formula { $$ := Build_Ast_Formula_Binary(Formula_Or,$1,$2) ; }
+| LNeg_Sy formula %prec Dummy 
+| quantified formula %prec Dummy
+| formula and_or term_formula 
 ; 
 
-term_formula : factor_formula { $$ := Build_Ast_Formula_seq_Single($1) ; }
-| term_formula Limp_Sy factor_formula { $$ := Build_Ast_Formula_Binary(Formula_Imp,$1,$2) ; }
-| term_formula Lequiv_Sy factor_formula { $$ := Build_Ast_Formula_Binary(Formula_Equiv,$1,$2) ; }
+term_formula : factor_formula 
+| term_formula imp_eq factor_formula
 ;
 
-factor_formula : True_Kw { $$ := Build_Ast_Formula_Const(True) ; }
-| False_Kw { $$ := Build_Ast_Formula_Const(False) ; }
-| Id_Val { $$ := Build_Ast_Formula_Var(yytext) ; }
-| expr_rel { $$ := $1 ; }
-| LP formula RP { $$ := $1 ; }
+factor_formula : True_Kw
+| False_Kw
+| expr_rel 
+| LP formula RP
 ;
 
-expr_rel : expr Eq_Sy expr { $$ := Build_Ast_Formula_Exprs(Expr_Rel_Eq,$1,$2) ; } 
-| expr Le_Sy expr { $$ := Build_Ast_Formula_Exprs(Expr_Rel_Le,$1,$2) ; }
-| expr Ge_Sy expr { $$ := Build_Ast_Formula_Exprs(Expr_Rel_Ge,$1,$2) ; }
-| expr Lt_Sy expr { $$ := Build_Ast_Formula_Exprs(Expr_Rel_Lt,$1,$2) ; }
-| expr Gt_Sy expr { $$ := Build_Ast_Formula_Exprs(Expr_Rel_Gt,$1,$2) ; }
+quantified : quant_sy Id_Val Is_Type_Kw type_case Comma_Sep_Kw { put_line(yytext) ; }
 ;
+
+quant_sy : Forall_Kw
+| Exists_Kw 
+;
+
+imp_eq : Limp_Sy | Lequiv_Sy ;
+
+and_or : Land_Sy | Lor_Sy ;
+
+logic_const : True_Kw | False_Kw ;
+
+expr_rel : expr Eq_Sy expr { $$ := Build_Ast_Formula_Exprs(Expr_Eq,$1,$2) ; } 
+| expr Le_Sy expr { $$ := Build_Ast_Formula_Exprs() ; }
+| expr Ge_Sy expr { $$ := Build_Ast_Formula_Exprs() ; }
+| expr Lt_Sy expr { $$ := Build_Ast_Formula_Exprs() ; }
+| expr Le_Sy expr { $$ := Build_Ast_Formula_Exprs() ; };
+
+lexpr : Eq_Sy | Le_Sy | Ge_Sy | Lt_Sy | Gt_Sy ;
 
 ----------------------------
 -- Grammar of expressions --
@@ -201,7 +199,7 @@ expr_rel : expr Eq_Sy expr { $$ := Build_Ast_Formula_Exprs(Expr_Rel_Eq,$1,$2) ; 
 expr : term_expr { $$ := $1 ; }
 | expr Plus_Sy term_expr { $$ := Build_Ast_Expr_Binary(Bin_Plus,$1,$2) ; }
 | expr Sub_Sy term_expr {  $$ := Build_Ast_Expr_Binary(Bin_Sub,$1,$2) ; }
-; 
+	; 
 
 term_expr : factor_expr { $$ := $1 ; }
 | term_expr Mul_Sy factor_expr { $$ := Build_Ast_Expr_Binary(Bin_Mult,$1,$2) ; }
