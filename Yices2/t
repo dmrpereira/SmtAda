@@ -1,0 +1,1816 @@
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_Version,"yices_version");
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_Build_Arch,"yices_build_arch");
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_Build_Mode,"yices_build_mode");
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_Build_Date,"yices_build_date");
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_Init,"yices_init") ;
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_Exit,"yices_exit") ;
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_Reset,"yices_reset");
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_Error_Code,"yices_error_code") ;
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_Error_Report,"yices_error_report") ;
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, Yices_Clear_Error,"yices_clear_error") ;
+[('Import', 'C', 'Yices_Clear_Error', '"yices_clear_error"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, Yices_Bool_Type, "yices_bool_type");
+[('Import', 'C', 'Yices_Bool_Type', '"yices_bool_type"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_int_type, "yices_int_type");
+[('Import', 'C', 'yices_int_type', '"yices_int_type"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_real_type, "yices_real_type");
+[('Import', 'C', 'yices_real_type', '"yices_real_type"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_Bv_Type,"yices_bv_type") ;
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_New_Scalar_Type,"yices_new_scalar_type") ;
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_New_Uninterpreted_Type,"yices_new_uninterpreted_type") ;
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_Tuple_Type,"yices_tuple_type") ;
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_Function_Type,"yices_function_type") ;
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_True,"yices_true") ;
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_False,"yices_false") ;
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_Constant,"yices_constant") ;
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import(C,Yices_New_Uninterpreted_Term,"yices_new_uninterpreted_term") ;
+[]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_new_variable, "yices_new_variable");
+[('Import', 'C', 'yices_new_variable', '"yices_new_variable"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_application, "yices_application");
+[('Import', 'C', 'yices_application', '"yices_application"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_ite, "yices_ite");
+[('Import', 'C', 'yices_ite', '"yices_ite"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_eq, "yices_eq");
+[('Import', 'C', 'yices_eq', '"yices_eq"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_neq, "yices_neq");
+[('Import', 'C', 'yices_neq', '"yices_neq"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_not, "yices_not");
+[('Import', 'C', 'yices_not', '"yices_not"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_or, "yices_or");
+[('Import', 'C', 'yices_or', '"yices_or"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_and, "yices_and");
+[('Import', 'C', 'yices_and', '"yices_and"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_xor, "yices_xor");
+[('Import', 'C', 'yices_xor', '"yices_xor"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_or2, "yices_or2");
+[('Import', 'C', 'yices_or2', '"yices_or2"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_and2, "yices_and2");
+[('Import', 'C', 'yices_and2', '"yices_and2"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_xor2, "yices_xor2");
+[('Import', 'C', 'yices_xor2', '"yices_xor2"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_or3, "yices_or3");
+[('Import', 'C', 'yices_or3', '"yices_or3"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_and3, "yices_and3");
+[('Import', 'C', 'yices_and3', '"yices_and3"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_xor3, "yices_xor3");
+[('Import', 'C', 'yices_xor3', '"yices_xor3"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_iff, "yices_iff");
+[('Import', 'C', 'yices_iff', '"yices_iff"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_implies, "yices_implies");
+[('Import', 'C', 'yices_implies', '"yices_implies"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_tuple, "yices_tuple");
+[('Import', 'C', 'yices_tuple', '"yices_tuple"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_select, "yices_select");
+[('Import', 'C', 'yices_select', '"yices_select"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_tuple_update, "yices_tuple_update");
+[('Import', 'C', 'yices_tuple_update', '"yices_tuple_update"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_update, "yices_update");
+[('Import', 'C', 'yices_update', '"yices_update"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_distinct, "yices_distinct");
+[('Import', 'C', 'yices_distinct', '"yices_distinct"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_forall, "yices_forall");
+[('Import', 'C', 'yices_forall', '"yices_forall"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_exists, "yices_exists");
+[('Import', 'C', 'yices_exists', '"yices_exists"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_lambda, "yices_lambda");
+[('Import', 'C', 'yices_lambda', '"yices_lambda"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_zero, "yices_zero");
+[('Import', 'C', 'yices_zero', '"yices_zero"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_int32, "yices_int32");
+[('Import', 'C', 'yices_int32', '"yices_int32"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_int64, "yices_int64");
+[('Import', 'C', 'yices_int64', '"yices_int64"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_rational32, "yices_rational32");
+[('Import', 'C', 'yices_rational32', '"yices_rational32"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_rational64, "yices_rational64");
+[('Import', 'C', 'yices_rational64', '"yices_rational64"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_parse_rational, "yices_parse_rational");
+[('Import', 'C', 'yices_parse_rational', '"yices_parse_rational"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_parse_float, "yices_parse_float");
+[('Import', 'C', 'yices_parse_float', '"yices_parse_float"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_add, "yices_add");
+[('Import', 'C', 'yices_add', '"yices_add"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_sub, "yices_sub");
+[('Import', 'C', 'yices_sub', '"yices_sub"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_neg, "yices_neg");
+[('Import', 'C', 'yices_neg', '"yices_neg"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_mul, "yices_mul");
+[('Import', 'C', 'yices_mul', '"yices_mul"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_square, "yices_square");
+[('Import', 'C', 'yices_square', '"yices_square"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_power, "yices_power");
+[('Import', 'C', 'yices_power', '"yices_power"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_poly_int32, "yices_poly_int32");
+[('Import', 'C', 'yices_poly_int32', '"yices_poly_int32"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_poly_int64, "yices_poly_int64");
+[('Import', 'C', 'yices_poly_int64', '"yices_poly_int64"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_poly_rational32, "yices_poly_rational32");
+[('Import', 'C', 'yices_poly_rational32', '"yices_poly_rational32"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_poly_rational64, "yices_poly_rational64");
+[('Import', 'C', 'yices_poly_rational64', '"yices_poly_rational64"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_arith_eq_atom, "yices_arith_eq_atom");
+[('Import', 'C', 'yices_arith_eq_atom', '"yices_arith_eq_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_arith_neq_atom, "yices_arith_neq_atom");
+[('Import', 'C', 'yices_arith_neq_atom', '"yices_arith_neq_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_arith_geq_atom, "yices_arith_geq_atom");
+[('Import', 'C', 'yices_arith_geq_atom', '"yices_arith_geq_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_arith_leq_atom, "yices_arith_leq_atom");
+[('Import', 'C', 'yices_arith_leq_atom', '"yices_arith_leq_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_arith_gt_atom, "yices_arith_gt_atom");
+[('Import', 'C', 'yices_arith_gt_atom', '"yices_arith_gt_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_arith_lt_atom, "yices_arith_lt_atom");
+[('Import', 'C', 'yices_arith_lt_atom', '"yices_arith_lt_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_arith_eq0_atom, "yices_arith_eq0_atom");
+[('Import', 'C', 'yices_arith_eq0_atom', '"yices_arith_eq0_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_arith_neq0_atom, "yices_arith_neq0_atom");
+[('Import', 'C', 'yices_arith_neq0_atom', '"yices_arith_neq0_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_arith_geq0_atom, "yices_arith_geq0_atom");
+[('Import', 'C', 'yices_arith_geq0_atom', '"yices_arith_geq0_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_arith_leq0_atom, "yices_arith_leq0_atom");
+[('Import', 'C', 'yices_arith_leq0_atom', '"yices_arith_leq0_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_arith_gt0_atom, "yices_arith_gt0_atom");
+[('Import', 'C', 'yices_arith_gt0_atom', '"yices_arith_gt0_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_arith_lt0_atom, "yices_arith_lt0_atom");
+[('Import', 'C', 'yices_arith_lt0_atom', '"yices_arith_lt0_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvconst_uint32, "yices_bvconst_uint32");
+[('Import', 'C', 'yices_bvconst_uint32', '"yices_bvconst_uint32"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvconst_uint64, "yices_bvconst_uint64");
+[('Import', 'C', 'yices_bvconst_uint64', '"yices_bvconst_uint64"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvconst_zero, "yices_bvconst_zero");
+[('Import', 'C', 'yices_bvconst_zero', '"yices_bvconst_zero"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvconst_one, "yices_bvconst_one");
+[('Import', 'C', 'yices_bvconst_one', '"yices_bvconst_one"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvconst_minus_one, "yices_bvconst_minus_one");
+[('Import', 'C', 'yices_bvconst_minus_one', '"yices_bvconst_minus_one"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvconst_from_array, "yices_bvconst_from_array");
+[('Import', 'C', 'yices_bvconst_from_array', '"yices_bvconst_from_array"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_parse_bvbin, "yices_parse_bvbin");
+[('Import', 'C', 'yices_parse_bvbin', '"yices_parse_bvbin"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_parse_bvhex, "yices_parse_bvhex");
+[('Import', 'C', 'yices_parse_bvhex', '"yices_parse_bvhex"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvadd, "yices_bvadd");
+[('Import', 'C', 'yices_bvadd', '"yices_bvadd"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvsub, "yices_bvsub");
+[('Import', 'C', 'yices_bvsub', '"yices_bvsub"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvneg, "yices_bvneg");
+[('Import', 'C', 'yices_bvneg', '"yices_bvneg"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvmul, "yices_bvmul");
+[('Import', 'C', 'yices_bvmul', '"yices_bvmul"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvsquare, "yices_bvsquare");
+[('Import', 'C', 'yices_bvsquare', '"yices_bvsquare"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvpower, "yices_bvpower");
+[('Import', 'C', 'yices_bvpower', '"yices_bvpower"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvdiv, "yices_bvdiv");
+[('Import', 'C', 'yices_bvdiv', '"yices_bvdiv"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvrem, "yices_bvrem");
+[('Import', 'C', 'yices_bvrem', '"yices_bvrem"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvsdiv, "yices_bvsdiv");
+[('Import', 'C', 'yices_bvsdiv', '"yices_bvsdiv"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvsrem, "yices_bvsrem");
+[('Import', 'C', 'yices_bvsrem', '"yices_bvsrem"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvsmod, "yices_bvsmod");
+[('Import', 'C', 'yices_bvsmod', '"yices_bvsmod"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvnot, "yices_bvnot");
+[('Import', 'C', 'yices_bvnot', '"yices_bvnot"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvand, "yices_bvand");
+[('Import', 'C', 'yices_bvand', '"yices_bvand"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvor, "yices_bvor");
+[('Import', 'C', 'yices_bvor', '"yices_bvor"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvxor, "yices_bvxor");
+[('Import', 'C', 'yices_bvxor', '"yices_bvxor"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvnand, "yices_bvnand");
+[('Import', 'C', 'yices_bvnand', '"yices_bvnand"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvnor, "yices_bvnor");
+[('Import', 'C', 'yices_bvnor', '"yices_bvnor"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvxnor, "yices_bvxnor");
+[('Import', 'C', 'yices_bvxnor', '"yices_bvxnor"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvshl, "yices_bvshl");
+[('Import', 'C', 'yices_bvshl', '"yices_bvshl"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvlshr, "yices_bvlshr");
+[('Import', 'C', 'yices_bvlshr', '"yices_bvlshr"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvashr, "yices_bvashr");
+[('Import', 'C', 'yices_bvashr', '"yices_bvashr"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_shift_left0, "yices_shift_left0");
+[('Import', 'C', 'yices_shift_left0', '"yices_shift_left0"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_shift_left1, "yices_shift_left1");
+[('Import', 'C', 'yices_shift_left1', '"yices_shift_left1"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_shift_right0, "yices_shift_right0");
+[('Import', 'C', 'yices_shift_right0', '"yices_shift_right0"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_shift_right1, "yices_shift_right1");
+[('Import', 'C', 'yices_shift_right1', '"yices_shift_right1"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_ashift_right, "yices_ashift_right");
+[('Import', 'C', 'yices_ashift_right', '"yices_ashift_right"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_rotate_left, "yices_rotate_left");
+[('Import', 'C', 'yices_rotate_left', '"yices_rotate_left"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_rotate_right, "yices_rotate_right");
+[('Import', 'C', 'yices_rotate_right', '"yices_rotate_right"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvextract, "yices_bvextract");
+[('Import', 'C', 'yices_bvextract', '"yices_bvextract"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvconcat, "yices_bvconcat");
+[('Import', 'C', 'yices_bvconcat', '"yices_bvconcat"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvrepeat, "yices_bvrepeat");
+[('Import', 'C', 'yices_bvrepeat', '"yices_bvrepeat"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_sign_extend, "yices_sign_extend");
+[('Import', 'C', 'yices_sign_extend', '"yices_sign_extend"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_zero_extend, "yices_zero_extend");
+[('Import', 'C', 'yices_zero_extend', '"yices_zero_extend"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_redand, "yices_redand");
+[('Import', 'C', 'yices_redand', '"yices_redand"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_redor, "yices_redor");
+[('Import', 'C', 'yices_redor', '"yices_redor"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_redcomp, "yices_redcomp");
+[('Import', 'C', 'yices_redcomp', '"yices_redcomp"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvarray, "yices_bvarray");
+[('Import', 'C', 'yices_bvarray', '"yices_bvarray"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bitextract, "yices_bitextract");
+[('Import', 'C', 'yices_bitextract', '"yices_bitextract"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bveq_atom, "yices_bveq_atom");
+[('Import', 'C', 'yices_bveq_atom', '"yices_bveq_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvneq_atom, "yices_bvneq_atom");
+[('Import', 'C', 'yices_bvneq_atom', '"yices_bvneq_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvge_atom, "yices_bvge_atom");
+[('Import', 'C', 'yices_bvge_atom', '"yices_bvge_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvgt_atom, "yices_bvgt_atom");
+[('Import', 'C', 'yices_bvgt_atom', '"yices_bvgt_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvle_atom, "yices_bvle_atom");
+[('Import', 'C', 'yices_bvle_atom', '"yices_bvle_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvlt_atom, "yices_bvlt_atom");
+[('Import', 'C', 'yices_bvlt_atom', '"yices_bvlt_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvsge_atom, "yices_bvsge_atom");
+[('Import', 'C', 'yices_bvsge_atom', '"yices_bvsge_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvsgt_atom, "yices_bvsgt_atom");
+[('Import', 'C', 'yices_bvsgt_atom', '"yices_bvsgt_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvsle_atom, "yices_bvsle_atom");
+[('Import', 'C', 'yices_bvsle_atom', '"yices_bvsle_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_bvslt_atom, "yices_bvslt_atom");
+[('Import', 'C', 'yices_bvslt_atom', '"yices_bvslt_atom"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_parse_type, "yices_parse_type");
+[('Import', 'C', 'yices_parse_type', '"yices_parse_type"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_parse_term, "yices_parse_term");
+[('Import', 'C', 'yices_parse_term', '"yices_parse_term"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_subst_term, "yices_subst_term");
+[('Import', 'C', 'yices_subst_term', '"yices_subst_term"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_subst_term_array, "yices_subst_term_array");
+[('Import', 'C', 'yices_subst_term_array', '"yices_subst_term_array"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_set_type_name, "yices_set_type_name");
+[('Import', 'C', 'yices_set_type_name', '"yices_set_type_name"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_set_term_name, "yices_set_term_name");
+[('Import', 'C', 'yices_set_term_name', '"yices_set_term_name"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_remove_type_name, "yices_remove_type_name");
+[('Import', 'C', 'yices_remove_type_name', '"yices_remove_type_name"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_remove_term_name, "yices_remove_term_name");
+[('Import', 'C', 'yices_remove_term_name', '"yices_remove_term_name"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_get_type_by_name, "yices_get_type_by_name");
+[('Import', 'C', 'yices_get_type_by_name', '"yices_get_type_by_name"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_get_term_by_name, "yices_get_term_by_name");
+[('Import', 'C', 'yices_get_term_by_name', '"yices_get_term_by_name"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_clear_type_name, "yices_clear_type_name");
+[('Import', 'C', 'yices_clear_type_name', '"yices_clear_type_name"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_clear_term_name, "yices_clear_term_name");
+[('Import', 'C', 'yices_clear_term_name', '"yices_clear_term_name"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_pp_type, "yices_pp_type");
+[('Import', 'C', 'yices_pp_type', '"yices_pp_type"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_pp_term, "yices_pp_term");
+[('Import', 'C', 'yices_pp_term', '"yices_pp_term"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_type_of_term, "yices_type_of_term");
+[('Import', 'C', 'yices_type_of_term', '"yices_type_of_term"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_term_is_bool, "yices_term_is_bool");
+[('Import', 'C', 'yices_term_is_bool', '"yices_term_is_bool"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_term_is_int, "yices_term_is_int");
+[('Import', 'C', 'yices_term_is_int', '"yices_term_is_int"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_term_is_real, "yices_term_is_real");
+[('Import', 'C', 'yices_term_is_real', '"yices_term_is_real"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_term_is_arithmetic, "yices_term_is_arithmetic");
+[('Import', 'C', 'yices_term_is_arithmetic', '"yices_term_is_arithmetic"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_term_is_bitvector, "yices_term_is_bitvector");
+[('Import', 'C', 'yices_term_is_bitvector', '"yices_term_is_bitvector"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_term_is_tuple, "yices_term_is_tuple");
+[('Import', 'C', 'yices_term_is_tuple', '"yices_term_is_tuple"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_term_is_function, "yices_term_is_function");
+[('Import', 'C', 'yices_term_is_function', '"yices_term_is_function"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_term_is_scalar, "yices_term_is_scalar");
+[('Import', 'C', 'yices_term_is_scalar', '"yices_term_is_scalar"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_term_bitsize, "yices_term_bitsize");
+[('Import', 'C', 'yices_term_bitsize', '"yices_term_bitsize"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_new_config, "yices_new_config");
+[('Import', 'C', 'yices_new_config', '"yices_new_config"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_free_config, "yices_free_config");
+[('Import', 'C', 'yices_free_config', '"yices_free_config"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_set_config, "yices_set_config");
+[('Import', 'C', 'yices_set_config', '"yices_set_config"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_default_config_for_logic, "yices_default_config_for_logic");
+[('Import', 'C', 'yices_default_config_for_logic', '"yices_default_config_for_logic"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_new_context, "yices_new_context");
+[('Import', 'C', 'yices_new_context', '"yices_new_context"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_free_context, "yices_free_context");
+[('Import', 'C', 'yices_free_context', '"yices_free_context"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_context_status, "yices_context_status");
+[('Import', 'C', 'yices_context_status', '"yices_context_status"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_reset_context, "yices_reset_context");
+[('Import', 'C', 'yices_reset_context', '"yices_reset_context"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_push, "yices_push");
+[('Import', 'C', 'yices_push', '"yices_push"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_pop, "yices_pop");
+[('Import', 'C', 'yices_pop', '"yices_pop"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_context_enable_option, "yices_context_enable_option");
+[('Import', 'C', 'yices_context_enable_option', '"yices_context_enable_option"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_context_disable_option, "yices_context_disable_option");
+[('Import', 'C', 'yices_context_disable_option', '"yices_context_disable_option"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_assert_formula, "yices_assert_formula");
+[('Import', 'C', 'yices_assert_formula', '"yices_assert_formula"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_assert_formulas, "yices_assert_formulas");
+[('Import', 'C', 'yices_assert_formulas', '"yices_assert_formulas"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_check_context, "yices_check_context");
+[('Import', 'C', 'yices_check_context', '"yices_check_context"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_assert_blocking_clause, "yices_assert_blocking_clause");
+[('Import', 'C', 'yices_assert_blocking_clause', '"yices_assert_blocking_clause"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_stop_search, "yices_stop_search");
+[('Import', 'C', 'yices_stop_search', '"yices_stop_search"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_new_param_record, "yices_new_param_record");
+[('Import', 'C', 'yices_new_param_record', '"yices_new_param_record"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_set_param, "yices_set_param");
+[('Import', 'C', 'yices_set_param', '"yices_set_param"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_free_param_record, "yices_free_param_record");
+[('Import', 'C', 'yices_free_param_record', '"yices_free_param_record"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_get_model, "yices_get_model");
+[('Import', 'C', 'yices_get_model', '"yices_get_model"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_free_model, "yices_free_model");
+[('Import', 'C', 'yices_free_model', '"yices_free_model"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_print_model, "yices_print_model");
+[('Import', 'C', 'yices_print_model', '"yices_print_model"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_pp_model, "yices_pp_model");
+[('Import', 'C', 'yices_pp_model', '"yices_pp_model"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_get_bool_value, "yices_get_bool_value");
+[('Import', 'C', 'yices_get_bool_value', '"yices_get_bool_value"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_get_int32_value, "yices_get_int32_value");
+[('Import', 'C', 'yices_get_int32_value', '"yices_get_int32_value"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_get_int64_value, "yices_get_int64_value");
+[('Import', 'C', 'yices_get_int64_value', '"yices_get_int64_value"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_get_rational32_value, "yices_get_rational32_value");
+[('Import', 'C', 'yices_get_rational32_value', '"yices_get_rational32_value"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_get_rational64_value, "yices_get_rational64_value");
+[('Import', 'C', 'yices_get_rational64_value', '"yices_get_rational64_value"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_get_double_value, "yices_get_double_value");
+[('Import', 'C', 'yices_get_double_value', '"yices_get_double_value"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_get_bv_value, "yices_get_bv_value");
+[('Import', 'C', 'yices_get_bv_value', '"yices_get_bv_value"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
+pragma Import (C, yices_get_scalar_value, "yices_get_scalar_value");
+[('Import', 'C', 'yices_get_scalar_value', '"yices_get_scalar_value"')]
+-------
+Not yet implemented
+-------
+Not yet implemented
+-------
