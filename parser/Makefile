@@ -1,7 +1,7 @@
 all:
 	ayacc parser.y 
 	gnatchop -w parser.a
-	aflex lexer.l
+	aflex -E lexer.l
 	gnatchop -w lexer.a
 	gnatchop -w lexer_io.a
 	gnatchop -w lexer_dfa.a

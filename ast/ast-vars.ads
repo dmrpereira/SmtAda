@@ -1,15 +1,15 @@
 with Ada.Strings.Unbounded ; use Ada.Strings.Unbounded ;
 
+with Ast.Types ; use Ast.Types ;
+
 package Ast.Vars is
    
-   type Type_Case is (Type_Nat,Type_Bool) ;
-   
-   type Ast_Var is new Abs_Ast with
+   type Ast_Var is new Ast_Abstract with
       record
 	 Ast_Var_Name : Unbounded_String ;
-	 Ast_Var_Type : Type_Case ;
+	 Ast_Var_Type : Ast_Type_Node ;
       end record ;
    
-   function Mk_Ast_Var(N : in Unbounded_String ; T : in Type_Case) return Ast_Node ;
+   function Mk_Ast_Var(N : in String ; T : in String) return Ast_Node ;
    
 end Ast.Vars ;

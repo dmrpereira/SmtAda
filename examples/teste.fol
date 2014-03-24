@@ -10,3 +10,9 @@ axioms {
 	assume ~(forall x:int,forall y:int, x=x /\ y=y) ;
 
 }
+
+goals {
+
+      sat forall x:int, x=x ;
+
+}
